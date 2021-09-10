@@ -3,12 +3,12 @@ import java.awt.*;
 
 public class Frame extends JFrame {
     public Frame() {
-        setSize(500,500);
+        setSize(300,300);
         setTitle("TicTacToe");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         Container container = getContentPane();
-        Panel panel = new Panel();
-        container.add(panel, BorderLayout.CENTER );
+        Panels panels = new Panels();
+        container.add(panels);
     }
 }
