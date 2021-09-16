@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418aef79-dc43-4917-ae23-1845ad0d17dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GameFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PanelGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/Frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/GameGrid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Panels$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Panels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +37,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="azaza" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TicTacToe" />
       <method v="2">
@@ -70,6 +69,8 @@
       <workItem from="1631354222689" duration="708000" />
       <workItem from="1631604205808" duration="5659000" />
       <workItem from="1631688058313" duration="11631000" />
+      <workItem from="1631787662964" duration="99000" />
+      <workItem from="1631787777535" duration="1413000" />
     </task>
     <servers />
   </component>

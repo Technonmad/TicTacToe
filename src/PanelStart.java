@@ -8,7 +8,7 @@ public class PanelStart extends JPanel {
         JButton button = new JButton("Start");
         JLabel label = new JLabel("Крестики - нолики");
         GameFrame gameFrame = new GameFrame();
-        Actions btnAction = new Actions();
+        //Actions btnAction = new Actions();
 
         add(label);
         add(button);
@@ -18,6 +18,7 @@ public class PanelStart extends JPanel {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 gameFrame.setVisible(true);
+                //(JButton)actionEvent.getSource(); тут через getSource
             }
         });
         label.setBounds(100,0, 200,200);

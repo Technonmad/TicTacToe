@@ -20,6 +20,7 @@ public class PanelGame extends JPanel {
                 buttons[i][j] = new JButton();
                 buttons[i][j].setBounds(145 + j * 30,105 + i * 30,30,30);
                 add(buttons[i][j]);
+                //можно поставить метки getActionComment
             }
         }
 

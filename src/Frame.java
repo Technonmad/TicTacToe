@@ -8,13 +8,12 @@ public class Frame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         Container container = getContentPane();
-<<<<<<< Updated upstream
         Panel panel = new Panel();
         container.add(panel, BorderLayout.CENTER );
-=======
+
         PanelStart panelStart = new PanelStart();
         container.add(panelStart);
         panelStart.setVisible(true);
->>>>>>> Stashed changes
+
     }
 }
