@@ -18,7 +18,8 @@ public class PanelGame extends JPanel {
         for (int i = 0; i < buttons.length; i++){
             for (int j = 0; j < buttons.length; j++){
                 buttons[i][j] = new JButton();
-                buttons[i][j].setBounds(145 + j * 30,105 + i * 30,30,30);
+                buttons[i][j].setBounds(70 + j * 50,50 + i * 50,50,50);
+                buttons[i][j].addActionListener(new GameButtonController(buttons[i][j]));
                 add(buttons[i][j]);
                 //можно поставить метки getActionComment
             }

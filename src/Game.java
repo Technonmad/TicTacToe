@@ -5,16 +5,20 @@ import java.util.Scanner;
 
 public class Game extends PanelGame{
 
-    private PlayerTurn playerTurn = new PlayerTurn();
-    private Scanner in = new Scanner(System.in);
-    //private MyField field = new MyField();
+    //private Scanner in = new Scanner(System.in);
+    private String playerx = "x";
+    private String playero = "o";
+    private String currentPlayer = playerx;
 
     public void StartGame() {
-        //field.showField();
 
+    }
 
-
-
+    public void swapPlayers(){
+        if (currentPlayer == playerx)
+            currentPlayer = playero;
+        else
+            currentPlayer = playerx;
     }
 
 }
