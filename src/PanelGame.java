@@ -10,6 +10,9 @@ public class PanelGame extends JPanel {
 
     JLabel label = new JLabel();
     JButton[][] buttons = new JButton[3][3];
+    JButton retryButton = new JButton();
+    Game game = Game.getInstance();
+    Container container;
 
     public PanelGame(){
 
@@ -19,17 +22,19 @@ public class PanelGame extends JPanel {
             for (int j = 0; j < buttons.length; j++){
                 buttons[i][j] = new JButton();
                 buttons[i][j].setBounds(70 + j * 50,50 + i * 50,50,50);
-                buttons[i][j].addActionListener(new GameButtonController(buttons[i][j]));
+                buttons[i][j].addActionListener(new GameButtonController(buttons[i][j], this, container));
                 add(buttons[i][j]);
                 //можно поставить метки getActionComment
             }
         }
 
+
+        label.setBounds(50,220, 100,20);
+        retryButton.setBounds(150,220, 100,20);
+        //retryButton.addActionListener(new MainMenuController(frame, this, container));
+
         add(label);
         setLayout(null);
-
-        label.setBounds(105,0, 200,200);
-
     }
 
     public void updateLabel(String text){

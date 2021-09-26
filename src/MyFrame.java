@@ -1,19 +1,17 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Frame extends JFrame {
-    public Frame() {
+public class MyFrame extends JFrame {
+    public MyFrame() {
         setSize(300,300);
         setTitle("TicTacToe");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        Game game = Game.getInstance();
 
         Container container = getContentPane();
-        Panel panel = new Panel();
-        container.add(panel, BorderLayout.CENTER );
-
-        PanelStart panelStart = new PanelStart();
+        PanelGame panelGame = new PanelGame();
+        PanelStart panelStart = new PanelStart(this, panelGame, container);
         container.add(panelStart);
-        panelStart.setVisible(true);
 
     }
 }

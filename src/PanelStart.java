@@ -1,26 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PanelStart extends JPanel {
-    public PanelStart() {
+    public PanelStart(JFrame frame, PanelGame panelGame, Container container) {
         JButton button = new JButton("Start");
         JLabel label = new JLabel("Крестики - нолики");
-        GameFrame gameFrame = new GameFrame();
-        //Actions btnAction = new Actions();
 
         add(label);
         add(button);
         setLayout(null);
         button.setBounds(105,115, 100, 30);
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                gameFrame.setVisible(true);
-                //(JButton)actionEvent.getSource(); тут через getSource
-            }
-        });
+        button.addActionListener(new MainMenuController(frame, panelGame, container));
         label.setBounds(100,0, 200,200);
     }
 
