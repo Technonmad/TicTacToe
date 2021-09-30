@@ -21,7 +21,13 @@ public class GameButtonController implements ActionListener {
         button.setEnabled(false);
         if(game.checkFreeSpace(panelGame.buttons) == false){
             panelGame.label.setText("Ничья!");
-            panelGame.add(panelGame.retryButton);
+            game.blockButtons(panelGame.buttons);
+        }
+        else {
+            if (game.checkWin(panelGame.buttons) != ""){
+                panelGame.label.setText(game.checkWin(panelGame.buttons));
+                game.blockButtons(panelGame.buttons);
+            }
         }
         game.swapPlayers();
     }

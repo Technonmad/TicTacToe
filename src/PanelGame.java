@@ -10,7 +10,7 @@ public class PanelGame extends JPanel {
 
     JLabel label = new JLabel();
     JButton[][] buttons = new JButton[3][3];
-    JButton retryButton = new JButton();
+    JButton restartButton = new JButton();
     Game game = Game.getInstance();
     Container container;
 
@@ -28,10 +28,10 @@ public class PanelGame extends JPanel {
             }
         }
 
-
-        label.setBounds(50,220, 100,20);
-        retryButton.setBounds(150,220, 100,20);
-        //retryButton.addActionListener(new MainMenuController(frame, this, container));
+        //restartButton.setBounds(105,115, 100, 30);
+        label.setHorizontalAlignment(SwingConstants.CENTER);
+        label.setBounds(70,220, 150,20);
+       // restartButton.
 
         add(label);
         setLayout(null);
